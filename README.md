@@ -31,6 +31,7 @@ This repository provides a guide to fine-tuning **DeepSeek R1** efficiently usin
 
 ```bash
 pip install unsloth
+```
 
 ### 3. Authenticate with Hugging Face
 
