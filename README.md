@@ -72,33 +72,33 @@ from transformers import AutoTokenizer
 
 - Example: Fine-Tuning with LoRA
 
-- from peft import LoraConfig, get_peft_model
+ from peft import LoraConfig, get_peft_model
 
-- lora_config = LoraConfig(
+ lora_config = LoraConfig(
     r=8, lora_alpha=32, lora_dropout=0.1, task_type="CAUSAL_LM"
 )
 
-- model = get_peft_model(model, lora_config)
+ model = get_peft_model(model, lora_config)
 
 ### Training the Model
 
-- from transformers import TrainingArguments, Trainer
+ from transformers import TrainingArguments, Trainer
 
-- training_args = TrainingArguments(
+ training_args = TrainingArguments(
     - output_dir="./results",
     - per_device_train_batch_size=2,
     - num_train_epochs=3,
     - logging_dir="./logs",
     - report_to="wandb",
-- )
+ )
 
-- trainer = Trainer(
+ trainer = Trainer(
     - model=model,
     - args=training_args,
     - train_dataset=your_dataset,  # Replace with your dataset
-- )
+ )
 
-- trainer.train()
+ trainer.train()
 
 ### Results
 	- •	**Fine-tuning** is significantly faster and more memory-efficient than traditional methods.
