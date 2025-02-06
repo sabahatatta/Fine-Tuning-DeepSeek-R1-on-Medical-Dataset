@@ -1,5 +1,3 @@
-Here’s a complete README.md for your project:
-
 # Fine-Tuning DeepSeek R1
 
 This repository provides a guide to fine-tuning **DeepSeek R1** efficiently using **Kaggle**, **Unsloth**, **Hugging Face**, and **Weights & Biases**. The goal is to fine-tune the model while optimizing memory usage and training speed.
